@@ -11,6 +11,20 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .card {
+        height: 100px;
+        overflow: hidden;
+      }
+
+      .card div div img {
+        transition: 300ms;
+      }
+
+      .card div div img:hover {
+        transform: scale(1.1);
+      }
+    </style>
   </head>
   <body>
     <!-- navigation -->
@@ -55,13 +69,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">NEWS</a>
-            <a class="nav-link" href="#">KNOCKOUT</a>
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >NEWS</a
+            >
+            <a class="nav-link" href="pages/KNOCKOUT.html">KNOCKOUT</a>
             <a class="nav-link" href="#">TEAMS</a>
           </div>
         </div>
       </div>
     </nav>
+    <!-- end navigation -->
 
     <!-- Hero -->
     <div
@@ -76,28 +93,32 @@
     >
       <h1
         class="text-light ms-5"
-        style="padding-top: 400px; text-shadow: black 4px 1px"
+        style="padding-top: 400px; text-shadow: black 4px 1px 5px"
       >
         The King Of Football
       </h1>
-      <p class="text-light ms-5" style="text-shadow: black 2px 1px">
+      <p class="text-light ms-5" style="text-shadow: black 2px 1px 5px">
         Pelé: 1940 - 2022.
       </p>
     </div>
 
-    <div class="container-fluid mt-5">
+    <!-- content news -->
+    <div class="container mt-5">
       <h4>Latest News</h4>
       <div class="row">
         <div class="col-8">
-          <div class="card text-bg-dark">
+          <div class="card text-bg-dark" style="overflow: visible">
             <img
               src="img/background/Argentina-v-Croatia-Semi-Final-FIFA-World-Cup-Qatar-2022.webp"
               class="card-img"
               alt="..."
             />
-            <div class="card-img-overlay">
+            <div class="card-img-overlay" style="padding-top: 250px">
               <h5 class="card-title">Record that could be broken in 2023</h5>
-              <p class="card-text">
+              <p
+                class="card-text"
+                style="text-shadow: black 1px 1px 5px, black -1px -1px 5px"
+              >
                 Erling Haaland, Zlatan Ibrahimovic, Kylian Mbappe, Lionel Messi,
                 Cristiano Ronaldo and Christine Sinclaire are among the player
                 who could set milestones over the coming year
@@ -119,9 +140,9 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title text-black">
+                    <h6 class="card-title text-black">
                       Timeline of FIFA tournaments and event in 2023
-                    </h5>
+                    </h6>
                     <p class="card-text">
                       <small class="text-muted">Last updated 3 mins ago</small>
                     </p>
@@ -142,9 +163,9 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title text-black">
+                    <h6 class="card-title text-black">
                       Watch exclusive FIFA+ video on pele
-                    </h5>
+                    </h6>
                     <p class="card-text">
                       <small class="text-muted">Last updated 3 mins ago</small>
                     </p>
@@ -165,10 +186,10 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h7 class="card-title">
                       Cristiano, Mbappe, Messi, Ronaldo and other react to pele
                       passing
-                    </h5>
+                    </h7>
                     <p class="card-text">
                       <small class="text-muted">Last updated 3 mins ago</small>
                     </p>
@@ -185,11 +206,12 @@
                     src="img/content/Pele-of-Brazil-after-winning-Mexico-1970.webp"
                     class="img-fluid rounded-start"
                     alt="..."
+                    style="margin-top: -20px"
                   />
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">A tribute to pele</h5>
+                    <h6 class="card-title">A tribute to pele</h6>
                     <p class="card-text">
                       <small class="text-muted">Last updated 3 mins ago</small>
                     </p>
