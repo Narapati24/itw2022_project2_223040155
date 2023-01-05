@@ -24,12 +24,18 @@
       .card div div img:hover {
         transform: scale(1.1);
       }
+
+      @media (max-width: 767px) {
+        .sec-navbar {
+          margin-top: 0 !important;
+        }
+      }
     </style>
   </head>
   <body>
     <!-- navigation -->
     <nav
-      class="navbar navbar-expand-lg navbar-dark py-0 fixed-top"
+      class="navbar navbar-expand-lg navbar-dark py-0 fixed-top d-none d-md-block"
       style="background-color: #4a026e"
     >
       <div class="container-fluid">
@@ -39,14 +45,13 @@
         <div class="d-block">
           <div class="navbar-nav flex-row">
             <a class="nav-link" href="pages/BUY TICKETS.html">BUY TICKETS</a>
-            <a class="nav-link ms-3" href="#">FIFA+ COLLECT</a>
           </div>
         </div>
       </div>
     </nav>
 
     <nav
-      class="navbar navbar-expand-md navbar-dark fixed-top"
+      class="navbar navbar-expand-md navbar-dark fixed-top sec-navbar"
       style="background-color: #550065; margin-top: 40px"
     >
       <div class="container-fluid">
@@ -74,6 +79,9 @@
             >
             <a class="nav-link" href="pages/KNOCKOUT.html">KNOCKOUT</a>
             <a class="nav-link" href="#">TEAMS</a>
+            <a class="nav-link d-md-none" href="pages/BUY TICKETS.html"
+              >BUY TICKETS</a
+            >
           </div>
         </div>
       </div>
@@ -82,10 +90,9 @@
 
     <!-- Hero -->
     <div
-      class="container-fluid"
+      class="container-fluid first-order"
       style="
         background-image: url(img/background/Pele.webp);
-        margin-top: 106px;
         background-size: cover;
         height: 100vh;
         background-position: center;

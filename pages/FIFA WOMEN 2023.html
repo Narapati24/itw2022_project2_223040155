@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FIFA World Cup Qatar 2022</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      input:focus {
+        background-color: lightskyblue;
+        border: none;
+      }
+
+      input {
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 5px;
+      }
+
+      .submit {
+        width: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark py-0 fixed-top d-none d-md-block"
+      style="background-color: #4a026e"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../img/logo/FIFA+.webp"
+            alt="Fifa+"
+            width="100"
+            height="24"
+          />
+        </a>
+        <div class="d-block">
+          <div class="navbar-nav flex-row">
+            <a class="nav-link" href="BUY TICKETS.html">BUY TICKETS</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav
+      class="navbar navbar-expand-md navbar-dark fixed-top sec-navbar"
+      style="background-color: #550065; margin-top: 40px"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="../img/logo/World-Cup-logo.webp"
+            alt="FIFA WORLD CUP"
+            height="40px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">NEWS</a>
+            <a class="nav-link" href="KNOCKOUT.html">KNOCKOUT</a>
+            <a class="nav-link" href="#">TEAMS</a>
+            <a class="nav-link d-md-none" href="BUY TICKETS.html"
+              >BUY TICKETS</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navigation -->
+
+    <div class="container-fluid first-order">
+      <div class="container d-flex justify-content-center w-50">
+        <div class="container d-flex flex-column">
+          <h1 class="pt-5 pb-3">Register your interest here</h1>
+          <p class="mb-5">
+            To receive information on how to apply for FIFA U-20 World Cup
+            Indonesia 2023™ tickets, please enter the data below, click on
+            “Send”, and then check your mailbox. We will keep you up to date
+            with the latest news and information regarding FIFA U-20 World Cup
+            Indonesia 2023™.
+          </p>
+          <form class="d-flex flex-column" name="project2-contact">
+            <label for="f-name">First Name</label>
+            <input class="rounded mb-3" type="text" name="f-name" id="f-name" />
+            <label for="l-name">Last Name</label>
+            <input class="rounded mb-3" type="text" name="l-name" id="l-name" />
+            <label for="email">Email Adress</label>
+            <input class="rounded mb-3" type="email" name="email" id="email" />
+            <label for="tiket-type">Match</label>
+            <div class="d-flex flex-row">
+              <select class="w-25" name="tiket-type" id="tiket-type">
+                <option value="opening-match">Opening Match</option>
+                <option value="inaugural-match">Inaugural Match</option>
+                <option value="group-stage">Group Stage</option>
+                <option value="round-of-16">Round of 16</option>
+                <option value="quarter-final">Quarter Final</option>
+                <option value="semi-final">Semi Final</option>
+                <option value="3rd-place">3rd Place</option>
+                <option value="final-match">Final Match</option>
+                <option value="" selected></option>
+              </select>
+              <input style="width: 8%" type="number" name="value" id="value" />
+              <p>ticket</p>
+            </div>
+            <button
+              class="btn bg-primary rounded-pill text-light submit p-2 mt-3"
+            >
+              SEND
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // contact
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbykCJYuTt3wFBS-wTTTBFu3EGWtJF2menTNiOGeQLtKsZ7XXlRqVKKG5zx9ng5nyb27cg/exec";
+      const form = document.forms["project2-contact"];
+      const btnKirim = document.querySelector(".submit");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
