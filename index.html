@@ -12,8 +12,8 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      .card {
-        height: 100px;
+      .small-card {
+        height: 120px;
         overflow: hidden;
       }
 
@@ -26,8 +26,8 @@
       }
 
       @media (max-width: 767px) {
-        .sec-navbar {
-          margin-top: 0 !important;
+        .first-order p {
+          margin-bottom: 60px !important;
         }
       }
     </style>
@@ -90,7 +90,7 @@
 
     <!-- Hero -->
     <div
-      class="container-fluid first-order"
+      class="container-fluid first-order d-flex flex-column justify-content-end text-center text-md-start"
       style="
         background-image: url(img/background/Pele.webp);
         background-size: cover;
@@ -99,12 +99,15 @@
       "
     >
       <h1
-        class="text-light ms-5"
-        style="padding-top: 400px; text-shadow: black 4px 1px 5px"
+        class="text-light ms-0 ms-md-5"
+        style="text-shadow: black 4px 1px 5px"
       >
         The King Of Football
       </h1>
-      <p class="text-light ms-5" style="text-shadow: black 2px 1px 5px">
+      <p
+        class="text-light ms-0 ms-md-5"
+        style="margin-bottom: 140px; text-shadow: black 2px 1px 5px"
+      >
         Pelé: 1940 - 2022.
       </p>
     </div>
@@ -113,15 +116,25 @@
     <div class="container mt-5">
       <h4>Latest News</h4>
       <div class="row">
-        <div class="col-8">
-          <div class="card text-bg-dark" style="overflow: visible">
+        <div class="col-12 col-md-8">
+          <div
+            class="card text-bg-dark ratio ratio-16x9 shadow mb-3"
+            style="overflow: visible"
+          >
             <img
               src="img/background/Argentina-v-Croatia-Semi-Final-FIFA-World-Cup-Qatar-2022.webp"
               class="card-img"
               alt="..."
             />
-            <div class="card-img-overlay" style="padding-top: 250px">
-              <h5 class="card-title">Record that could be broken in 2023</h5>
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-center justify-content-md-end"
+            >
+              <h5
+                class="card-title"
+                style="text-shadow: black 1px 1px 5px, black -1px -1px 5px"
+              >
+                Record that could be broken in 2023
+              </h5>
               <p
                 class="card-text"
                 style="text-shadow: black 1px 1px 5px, black -1px -1px 5px"
@@ -130,13 +143,18 @@
                 Cristiano Ronaldo and Christine Sinclaire are among the player
                 who could set milestones over the coming year
               </p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <p
+                class="card-text"
+                style="text-shadow: black 1px 1px 5px, black -1px -1px 5px"
+              >
+                <small><span id="last-update"></span></small>
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <div class="row">
-            <div class="card mb-3" style="max-width: 540px">
+            <div class="card small-card mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
@@ -151,7 +169,7 @@
                       Timeline of FIFA tournaments and event in 2023
                     </h6>
                     <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <small class="text-muted">Last updated 3 days ago</small>
                     </p>
                   </div>
                 </div>
@@ -159,7 +177,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="card mb-3" style="max-width: 540px">
+            <div class="card small-card mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
@@ -174,7 +192,7 @@
                       Watch exclusive FIFA+ video on pele
                     </h6>
                     <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <small class="text-muted">Last updated 4 days ago</small>
                     </p>
                   </div>
                 </div>
@@ -182,7 +200,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="card mb-3" style="max-width: 540px">
+            <div class="card small-card mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
@@ -198,7 +216,7 @@
                       passing
                     </h7>
                     <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <small class="text-muted">Last updated 4 days ago</small>
                     </p>
                   </div>
                 </div>
@@ -206,21 +224,20 @@
             </div>
           </div>
           <div class="row">
-            <div class="card mb-3" style="max-width: 540px">
+            <div class="card small-card mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
                     src="img/content/Pele-of-Brazil-after-winning-Mexico-1970.webp"
                     class="img-fluid rounded-start"
                     alt="..."
-                    style="margin-top: -20px"
                   />
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
                     <h6 class="card-title">A tribute to pele</h6>
                     <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <small class="text-muted">Last updated 5 days ago</small>
                     </p>
                   </div>
                 </div>
@@ -235,5 +252,9 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var date = document.lastModified;
+      document.getElementById("last-update").innerHTML = "Last updated " + date;
+    </script>
   </body>
 </html>

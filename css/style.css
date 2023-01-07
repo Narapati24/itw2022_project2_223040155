@@ -6,4 +6,20 @@
   .sec-navbar {
     margin-top: 0 !important;
   }
+
+  .first-order {
+    margin-top: 20px !important;
+  }
+
+  h5 {
+    font-size: 15px !important;
+  }
+
+  p {
+    font-size: 10px !important;
+  }
+
+  .small-card {
+    height: 400px !important;
+  }
 }
