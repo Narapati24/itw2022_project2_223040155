@@ -26,6 +26,24 @@
       .submit {
         width: 15%;
       }
+
+      @media (max-width: 767px) {
+        .form {
+          width: 100% !important;
+        }
+
+        .submit {
+          width: 25%;
+        }
+
+        .match select {
+          width: 75% !important;
+        }
+
+        .match input {
+          width: 15% !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -90,15 +108,14 @@
     <div class="loader"></div>
 
     <div class="container-fluid first-order">
-      <div class="container d-flex justify-content-center w-50">
+      <div class="container d-flex justify-content-center w-50 form">
         <div class="container d-flex flex-column">
           <h1 class="pt-5 pb-3">Register your interest here</h1>
           <p class="mb-5">
-            To receive information on how to apply for FIFA U-20 World Cup
-            Indonesia 2023™ tickets, please enter the data below, click on
-            “Send”, and then check your mailbox. We will keep you up to date
-            with the latest news and information regarding FIFA U-20 World Cup
-            Indonesia 2023™.
+            To receive information on how to buy ticket for FIFA WOMEN'S World
+            Cup 2023™ tickets, please enter the data below, click on “Send”, and
+            then check your mailbox. We will keep you up to date with the latest
+            news and information regarding FIFA WOMEN'S World Cup 2023™.
           </p>
           <form class="d-flex flex-column" name="project2-contact">
             <label for="f-name">First Name</label>
@@ -108,8 +125,8 @@
             <label for="email">Email Adress</label>
             <input class="rounded mb-3" type="email" name="email" id="email" />
             <label for="tiket-type">Match</label>
-            <div class="d-flex flex-row">
-              <select class="w-25" name="tiket-type" id="tiket-type">
+            <div class="d-flex flex-row match">
+              <select class="w-25" name="tiket-type" id="tiket-type" required>
                 <option value="opening-match">Opening Match</option>
                 <option value="inaugural-match">Inaugural Match</option>
                 <option value="group-stage">Group Stage</option>
@@ -120,7 +137,14 @@
                 <option value="final-match">Final Match</option>
                 <option value="" selected></option>
               </select>
-              <input style="width: 8%" type="number" name="value" id="value" />
+              <input
+                style="width: 8%"
+                type="number"
+                name="value"
+                id="value"
+                maxlength="2"
+                required
+              />
               <p>ticket</p>
             </div>
             <button
