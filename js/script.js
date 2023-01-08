@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
   setTimeout(function () {
     // Your code here
     loader.classList.add("loader-hidden");
-  }, 2000);
+  }, 1000);
 
   loader.addEventListener("transitionend", () => {
     document.body.removeChild("loader");

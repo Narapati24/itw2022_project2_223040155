@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FIFA World Cup Qatar 2022</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .team-flag div {
+        margin-top: 40px;
+        width: 11% !important;
+      }
+
+      .team-flag img {
+        width: 80%;
+        aspect-ratio: 3/2;
+        object-fit: fill;
+        border: solid antiquewhite;
+      }
+
+      @media (max-width: 1023px) {
+        .team-flag div {
+          width: 20% !important;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .team-flag div {
+          width: 30% !important;
+        }
+
+        .team-flag img {
+          width: 100% !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark py-0 fixed-top d-none d-md-block"
+      style="background-color: #4a026e"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../img/logo/FIFA+.webp"
+            alt="Fifa+"
+            width="100"
+            height="24"
+          />
+        </a>
+        <div class="d-block">
+          <div class="navbar-nav flex-row">
+            <a class="nav-link" href="BUY TICKETS.html">BUY TICKETS</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav
+      class="navbar navbar-expand-md navbar-dark fixed-top sec-navbar"
+      style="background-color: #550065; margin-top: 40px"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="../img/logo/World-Cup-logo.webp"
+            alt="FIFA WORLD CUP"
+            height="40px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">NEWS</a>
+            <a class="nav-link" href="KNOCKOUT.html">KNOCKOUT</a>
+            <a class="nav-link active" aria-current="page" href="TEAMS.html"
+              >TEAMS</a
+            >
+            <a class="nav-link d-md-none" href="BUY TICKETS.html"
+              >BUY TICKETS</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navigation -->
+
+    <div class="loader"></div>
+
+    <div class="container-fluid first-order" style="background-color: #550065">
+      <h2 class="pt-5 pb-3 p-md-3 text-white">Teams</h2>
+    </div>
+    <!-- firstrow -->
+    <div
+      class="container-fluid team-flag justify-content-center text-center row"
+    >
+      <div>
+        <img src="../img/flag/Argentina.png" alt="Argentina" />
+        <p class="lh-1">Argentina</p>
+        <p class="lh-1">(ARG)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Australia.png" alt="Australia" />
+        <p class="lh-1">Australia</p>
+        <p class="lh-1">(AUS)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Belgium.png" alt="Belgium" />
+        <p class="lh-1">Belgium</p>
+        <p class="lh-1">(BEL)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Brazil.png" alt="Brazil" />
+        <p class="lh-1">Brazil</p>
+        <p class="lh-1">(BRA)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Cameroon.png" alt="Cameroon" />
+        <p class="lh-1">Cameroon</p>
+        <p class="lh-1">(CMR)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Canada.png" alt="Canada" />
+        <p class="lh-1">Canada</p>
+        <p class="lh-1">(CAN)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Costa_Rica.png" alt="Costa_Rica" />
+        <p class="lh-1">Costa Rica</p>
+        <p class="lh-1">(CRC)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Croatia.png" alt="Croatia" />
+        <p class="lh-1">Croatia</p>
+        <p class="lh-1">(CRO)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Denmark.png" alt="Denmark" />
+        <p class="lh-1">Denmark</p>
+        <p class="lh-1">(DEN)</p>
+      </div>
+
+      <!-- secrow -->
+
+      <div>
+        <img src="../img/flag/Ecuador.png" alt="Ecuador" />
+        <p class="lh-1">Ecuador</p>
+        <p class="lh-1">(ECU)</p>
+      </div>
+      <div>
+        <img src="../img/flag/England.png" alt="England" />
+        <p class="lh-1">England</p>
+        <p class="lh-1">(ENG)</p>
+      </div>
+      <div>
+        <img src="../img/flag/France.png" alt="France" />
+        <p class="lh-1">France</p>
+        <p class="lh-1">(FRA)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Germany.png" alt="Germany" />
+        <p class="lh-1">Germany</p>
+        <p class="lh-1">(GER)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Ghana.png" alt="Ghana" />
+        <p class="lh-1">Ghana</p>
+        <p class="lh-1">(GHA)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Iran.png" alt="Iran" />
+        <p class="lh-1">Iran</p>
+        <p class="lh-1">(IRN)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Japan.png" alt="Japan" />
+        <p class="lh-1">Japan</p>
+        <p class="lh-1">(JPN)</p>
+      </div>
+      <div>
+        <img src="../img/flag/South_Korea.webp" alt="South_Korea" />
+        <p class="lh-1">Korea Republic</p>
+        <p class="lh-1">(KOR)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Mexico.png" alt="Mexico" />
+        <p class="lh-1">Mexico</p>
+        <p class="lh-1">(MEX)</p>
+      </div>
+
+      <!-- thirdrow -->
+
+      <div>
+        <img src="../img/flag/Morocco.png" alt="Morocco" />
+        <p class="lh-1">Morocco</p>
+        <p class="lh-1">(MAR)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Netherlands.png" alt="Netherlands" />
+        <p class="lh-1">Netherlands</p>
+        <p class="lh-1">(NED)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Poland.png" alt="Poland" />
+        <p class="lh-1">Poland</p>
+        <p class="lh-1">(POL)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Portugal.png" alt="Portugal" />
+        <p class="lh-1">Portugal</p>
+        <p class="lh-1">(POR)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Qatar.png" alt="Qatar" />
+        <p class="lh-1">Qatar</p>
+        <p class="lh-1">(QAT)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Saudi_Arabia.png" alt="Saudi Arabia" />
+        <p class="lh-1">Saudi Arabia</p>
+        <p class="lh-1">(KSA)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Senegal.png" alt="Senegal" />
+        <p class="lh-1">Senegal</p>
+        <p class="lh-1">(SEN)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Serbia.png" alt="Serbia" />
+        <p class="lh-1">Serbia</p>
+        <p class="lh-1">(SRB)</p>
+      </div>
+      <div>
+        <img src="../img/flag/España.png" alt="España" />
+        <p class="lh-1">Spain</p>
+        <p class="lh-1">(ESP)</p>
+      </div>
+
+      <!-- fourthrow -->
+
+      <div>
+        <img src="../img/flag/Switzerland.png" alt="Switzerland" />
+        <p class="lh-1">Switzerland</p>
+        <p class="lh-1">(SUI)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Tunisia.png" alt="Tunisia" />
+        <p class="lh-1">Tunisia</p>
+        <p class="lh-1">(TUN)</p>
+      </div>
+      <div>
+        <img src="../img/flag/USA.png" alt="USA" />
+        <p class="lh-1">United States</p>
+        <p class="lh-1">(USA)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Uruguay.png" alt="Uruguay" />
+        <p class="lh-1">Uruguay</p>
+        <p class="lh-1">(URU)</p>
+      </div>
+      <div>
+        <img src="../img/flag/Wales.png" alt="Wales" />
+        <p class="lh-1">Wales</p>
+        <p class="lh-1">(WAL)</p>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
