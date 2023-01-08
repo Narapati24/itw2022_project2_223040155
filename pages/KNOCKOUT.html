@@ -18,10 +18,21 @@
       .group-flag img {
         width: 30px;
         height: 20px;
-        /* aspect-ratio: 3/2; */
         object-fit: fill;
         margin-top: 2px;
         border: solid antiquewhite;
+      }
+
+      @media (max-width: 1023px) {
+        .group-flag .row .group {
+          width: 48% !important;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .group-flag .row .group {
+          width: 100% !important;
+        }
       }
     </style>
   </head>
@@ -86,6 +97,8 @@
     </nav>
     <!-- end navigation -->
 
+    <div class="loader"></div>
+
     <div class="container-fluid first-order" style="background-color: #550065">
       <h1 class="text-white p-5">FIFA WORLD CUP™ Knockout and Group</h1>
     </div>
@@ -102,6 +115,12 @@
         <p>Quarter-final</p>
         <p>Round of 16</p>
       </div>
+      <img
+        class="rounded"
+        src="../img/flag/Knockout.png"
+        alt=""
+        style="width: 100%; mix-blend-mode: multiply"
+      />
     </div>
 
     <div class="container group-flag">
@@ -109,7 +128,7 @@
       <div class="row justify-content-between">
         <!-- Group A -->
         <div
-          class="d-flex flex-column justify-content-between bg-light rounded m-1"
+          class="d-flex flex-column justify-content-between bg-light rounded m-1 group"
           style="width: 24%"
         >
           <div class="d-flex flex-row justify-content-between pt-3">
@@ -215,7 +234,7 @@
         </div>
         <!-- Group B -->
         <div
-          class="d-flex flex-column justify-content-between bg-light rounded m-1"
+          class="d-flex flex-column justify-content-between bg-light rounded m-1 group"
           style="width: 24%"
         >
           <div class="d-flex flex-row justify-content-between pt-3">
@@ -321,7 +340,7 @@
         </div>
         <!-- Group C -->
         <div
-          class="d-flex flex-column justify-content-between bg-light rounded m-1"
+          class="d-flex flex-column justify-content-between bg-light rounded m-1 group"
           style="width: 24%"
         >
           <div class="d-flex flex-row justify-content-between pt-3">
@@ -427,7 +446,7 @@
         </div>
         <!-- Group D -->
         <div
-          class="d-flex flex-column justify-content-between bg-light rounded m-1"
+          class="d-flex flex-column justify-content-between bg-light rounded m-1 group"
           style="width: 24%"
         >
           <div class="d-flex flex-row justify-content-between pt-3">
@@ -535,7 +554,7 @@
       <div class="row justify-content-between">
         <!-- Group E -->
         <div
-          class="d-flex flex-column justify-content-between bg-light rounded m-1"
+          class="d-flex flex-column justify-content-between bg-light rounded m-1 group"
           style="width: 24%"
         >
           <div class="d-flex flex-row justify-content-between pt-3">
@@ -641,7 +660,7 @@
         </div>
         <!-- Group F -->
         <div
-          class="d-flex flex-column justify-content-between bg-light rounded m-1"
+          class="d-flex flex-column justify-content-between bg-light rounded m-1 group"
           style="width: 24%"
         >
           <div class="d-flex flex-row justify-content-between pt-3">
@@ -747,7 +766,7 @@
         </div>
         <!-- Group G -->
         <div
-          class="d-flex flex-column justify-content-between bg-light rounded m-1"
+          class="d-flex flex-column justify-content-between bg-light rounded m-1 group"
           style="width: 24%"
         >
           <div class="d-flex flex-row justify-content-between pt-3">
@@ -853,7 +872,7 @@
         </div>
         <!-- Group H -->
         <div
-          class="d-flex flex-column justify-content-between bg-light rounded m-1"
+          class="d-flex flex-column justify-content-between bg-light rounded m-1 group"
           style="width: 24%"
         >
           <div class="d-flex flex-row justify-content-between pt-3">
@@ -965,5 +984,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>
